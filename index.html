@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Four card feature section</title>
   </head>
+  <!--  -->
   <body class="bg-[#FAFAFA] font-poppins">
-    <section class="flex flex-col mt-16 px-8">
+    <section class="flex flex-col mt-16 px-8 md:min-w-max md:overflow-x-auto">
       <!--  -->
       <h1 class="text-center text-xl md:text-4xl">
         <span class="block font-thin text-[#838388]"
@@ -35,18 +36,32 @@
           >points to ensure that your project is successful</span
         >
       </p>
-      <!-- cards -->
-      <!--  -->
-      <section
-        class="md:flex md:justify-center md:items-center md:space-x-6 md:mt-12"
+      <!-- card container -->
+      <div
+        class="md:flex md:justify-center md:items-center md:space-x-6 md:mt-12 md:pb-8 md:min-w-max md:overflow-x-auto"
       >
-        <div class="bg-red-500 drop-shadow-2xl rounded-lg w-80 h-64"></div>
-        <div class="space-y-6">
-          <div class="bg-red-500 drop-shadow-2xl rounded-lg w-80 h-64"></div>
-          <div class="bg-red-500 drop-shadow-2xl rounded-lg w-80 h-64"></div>
+        <!-- cards -->
+        <div class="bg-red-500 drop-shadow-2xl rounded-lg md:min-w-80 md:h-64">
+          <!-- content -->
         </div>
-        <div class="bg-red-500 drop-shadow-2xl rounded-lg w-80 h-64"></div>
-      </section>
+        <!-- center column bloc -->
+        <div class="space-y-6">
+          <div
+            class="bg-red-500 drop-shadow-2xl rounded-lg md:min-w-80 md:h-64"
+          >
+            <!-- content -->
+          </div>
+          <div
+            class="bg-red-500 drop-shadow-2xl rounded-lg md:min-w-80 md:h-64"
+          >
+            <!-- content -->
+          </div>
+        </div>
+        <!-- center column end -->
+        <div class="bg-red-500 drop-shadow-2xl rounded-lg md:min-w-80 md:h-64">
+          <!-- content -->
+        </div>
+      </div>
       <!--  -->
     </section>
   </body>
